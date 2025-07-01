@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+ <div class="container mt-4">
+  <h1 class="animated-text">
+  
+  </h1>
+</div>
+<style>
+.animated-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: .15em solid orange;
+  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* แอนิเมชันพิมพ์ทีละตัว */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* เคอร์เซอร์กระพริบ */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+</style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #6f42c1;">
+
+      
+      <!---->
+    <!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Apisit App Modern Text</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212; /* สีดำเข้มแบบโมเดิร์น */
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .modern-text {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #00ffe7; /* สีฟ้าอมเขียวเนียนตา */
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    position: relative;
+    cursor: default;
+  }
+
+  /* เพิ่มเส้นใต้แบบไลน์โมเดิร์น */
+  .modern-text::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(90deg, #00ffe7, #00a3a3);
+    border-radius: 2px;
+  }
+
+  /* เอฟเฟกต์แสงนวล */
+  .modern-text:hover {
+    color: #00ffc9;
+    text-shadow: 0 0 15px #00ffc9;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+  }
+</style>
+</head>
+<body>
+  <div class="modern-text">Apisit App</div>
+</body>
+</html>
+
+    </main>
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+<ul>
+ 
+ 
+ 
+</ul>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu Bar on Top</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    ul.menu {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      background-color: #333;
+      position: fixed; /* ทำให้ติดด้านบน */
+      top: 0;           /* ติดขอบบน */
+      left: 0;          /* ชิดซ้าย */
+      width: 100%;      /* กว้างเต็มจอ */
+      z-index: 999;     /* ให้ทับเนื้อหาอื่น */
+    }
+    ul.menu li {
+      margin: 0;
+    }
+    ul.menu li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    ul.menu li a:hover {
+      background-color: #111;
+    }
+    /* เพิ่มระยะเผื่อเมนู ไม่ให้เนื้อหาข้างล่างโดนทับ */
+    .content {
+      padding-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li>
+      <a href="/">
+        <i class="fas fa-home fa-lg"></i>
+      </a>
+    </li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+
+  <div class="content">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Slider</title>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <style>
+    body  { 
+      font-family: Arial, sans-serif;
+      background: #0d0b27;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      max-width: 800px;
+      height: 200px;
+      margin: 50px auto;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #fff;
+    }
+    .swiper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px auto;
+  background: #0d0b27;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 4200px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 15px;
+}
+.swiper {
+  width: 100%;
+  max-width: 1200px; /* กำหนดกรอบใหญ่สุด */
+  margin: 50px auto;
+  background: #0d0b27;
+  border-radius: 35px;
+  padding: 20px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh; /* ไม่ให้สูงเกินจอ */
+  object-fit: contain; /* แสดงเต็มโดยไม่เบี้ยว */
+  border-radius: 15px;
+  display: block;
+}
+
+  
+  </style>
+</head>
+<body>
+
+  <!-- Slider main container -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+
+      <!-- 🖼️ เปลี่ยน URL รูปภาพตรง src ได้ตามต้องการ -->
+      <div class="swiper-slide">
+        <img src=" https://cdn.discordapp.com/attachments/1363472938946265141/1369003049133281340/IMG_7716.jpg?ex=6864c3b1&is=68637231&hm=ecb11c7e990f50c424c5deeda18f92a6f72c0c599c27b7ebf5a65e8b6ff60bea&" alt="ภาพที่ 1"/>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://cdn.discordapp.com/attachments/1363472938946265141/1369003048013140112/IMG_8369.jpg?ex=6864c3b1&is=68637231&hm=751b32a0a3b69b05f97328821db652f278252f5610f21e7b309db23fc6a2afed&" alt="ภาพที่ 2"/>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="https://cdn.discordapp.com/attachments/1363472938946265141/1369003048524840990/IMG_8038.png?ex=6864c3b1&is=68637231&hm=6304f7c86d9cd3e5de6a828df4eec8a4bfb9345184809fe0b1506c596d36090f&" alt="ภาพที่ 3"/>
+      </div>
+
+    </div>
+
+    <!-- ปุ่มเลื่อน -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- เริ่มทำงาน Swiper -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+</body>
+</html>
+
+
+
